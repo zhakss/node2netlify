@@ -4,6 +4,7 @@ const ejs = require('ejs');
 const app = express();
 const port = process.env.PORT || 3000;
 
+app.set('views', 'public');
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
